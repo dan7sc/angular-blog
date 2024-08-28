@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-featured-card',
@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './featured-card.component.css'
 })
 export class FeaturedCardComponent {
-
+  @Input()
+  photoCover: string = ""
+  @Input()
+  cardTitle: string = ""
+  @Input()
+  cardDescription: string = ""
 }
